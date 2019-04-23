@@ -3,7 +3,7 @@ class Owner
   attr_reader :species
   @@owners = []
   @pets = {:fishes => [], :dogs => [], :cats => []}
-  
+
   def initialize(specie)
     @species = specie
     Owner.all << self

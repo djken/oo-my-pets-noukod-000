@@ -18,7 +18,7 @@ end 	  attr_reader :species
     @@all.clear
   end
 
-   def self.count 
+   def self.count
     @@all.size
   end
 

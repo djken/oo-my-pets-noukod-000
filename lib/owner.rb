@@ -10,7 +10,7 @@ class Owner
     @@pets_Owner << self
   end
 
-  def self.pets_Owner
+  def self.all
     @@pets_Owner
   end
 

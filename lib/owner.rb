@@ -66,16 +66,12 @@ class Owner
   end
 
   def sell_pets
-      pets.values.flatten.each {|pet| pet.mood = "nervous"}
-      @pets = {:fishes => [], :dogs => [], :cats => []}
+    pets.each do |pet, arr|
+      arr.map do |pet|
+        pet.mood = 'nervous'
+      end
+      arr.clear
+    end
   end
-  # def sell_pets
-  #   pets.each do |pet, arr|
-  #     arr.map do |pet|
-  #       pet.mood = 'nervous'
-  #     end
-  #     arr.clear
-  #   end
-  # end
 
 end
